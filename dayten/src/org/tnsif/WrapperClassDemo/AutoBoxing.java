@@ -4,6 +4,7 @@ package org.tnsif.WrapperClassDemo;
 public class AutoBoxing {
 
 	public static void main(String[] args) {
+		
 		char c='A';
 		//converting premitive datatype to object type
 		Character ch=c;
