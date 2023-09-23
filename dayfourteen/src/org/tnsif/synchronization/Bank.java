@@ -5,5 +5,5 @@ public interface Bank {
 		int DEPOSIT_LIMIT=25000;
 		static final int MINIMUM_BALANCE=1000;
 		public abstract void deposit(int amount)throws DepositLimitExceedException;
-		public abstract void withdraw(int amount)throws InsufficentBalanceException;
+		abstract void withdraw(int amount)throws InsufficentBalanceException;
 }

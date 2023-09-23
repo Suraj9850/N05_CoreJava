@@ -16,11 +16,15 @@ public class AccountThread extends Thread
 	public void run()
 	{
 		try {
-			acc.deposit(amount);
-			acc.withdraw(amount);
-		} catch (DepositLimitExceedException e) {
-			e.printStackTrace();
-		} catch (InsufficentBalanceException e) {
+			synchronized (acc) {
+				acc.withdraw(amount);
+			}
+//			acc.deposit(amount);
+		} 
+//			catch (DepositLimitExceedException e) {
+//			e.printStackTrace();
+//		} 
+		catch (InsufficentBalanceException e) {
 			e.printStackTrace();
 		}
 	}

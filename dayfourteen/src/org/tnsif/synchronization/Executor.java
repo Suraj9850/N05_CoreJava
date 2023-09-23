@@ -4,10 +4,10 @@ public class Executor {
 
 	public static void main(String[] args){
 		
-		Account a=new Account(101,"Abc",10000); 
-		
-		AccountThread t1=new AccountThread(a,5000);
-		AccountThread t2=new AccountThread(a,20000);
+		Account ac=new Account(101,"Amit",10000); 
+		System.out.println("Orignal Balance:"+10000);
+		AccountThread t1=new AccountThread(ac,5000);
+		AccountThread t2=new AccountThread(ac,200);
 		
 		//With Thread
 		t1.start();

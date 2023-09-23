@@ -1,5 +1,7 @@
 package org.tnsif.synchronization;
 
+import javax.sql.rowset.spi.SyncFactory;
+
 public class Account implements Bank
 {
 	private int accNo;
@@ -62,7 +64,7 @@ public class Account implements Bank
 	}
 
 	@Override
-	public void withdraw(int amount) throws InsufficentBalanceException {
+	public synchronized void withdraw(int amount) throws InsufficentBalanceException {
 		
 		if(balance-Bank.MINIMUM_BALANCE<amount)
 		{
