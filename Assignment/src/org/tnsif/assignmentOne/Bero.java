@@ -1,10 +1,4 @@
 package org.tnsif.assignmentOne;
-//Bero	String beroType
-//String beroColour
-//double price	Include the getter and setter method for all the attributes.
-//Include a parametrized constructor of two arguments in the following order - beroType, beroColourto intialize the values for the Bero object	
-//Bero	 	public abstract void calculatePrice()	 
-//Note:The attributes of the Bero class should be protected and the methods should be public
 
 public abstract class Bero {
 	

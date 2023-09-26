@@ -1,11 +1,5 @@
 package org.tnsif.assignmentOne;
 
-//CustomerDetails	String customerName
-//long phoneNumber
-//String address	
-//Include the getter and setter method for all the attributes.
-//Include a public parametrized constructor of three arguments in the following order - customerName, phoneNumber and address to initialize the values for the CustomerDetails object	
-//Note:The attributes of the CustomerDetails class should be private and the methods should be public
 
 public class CustomerDetails {
 	private String customerName;
@@ -18,7 +12,6 @@ public class CustomerDetails {
 		this.phoneNumber = phoneNumber;
 		this.address = address;
 	}
-	
 	public String getCustomerName() {
 		return customerName;
 	}

@@ -1,11 +1,27 @@
 package org.tnsif.assignmentOne;
 
+import java.util.Scanner;
+
 public class Reverse {
 
 	public static void main(String[] args) 
 	{
-		int mary[]= {12,65,87,78,98};
-		int pinky[]= {98,78,87,65,12};
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter size of n:");
+		int n=sc.nextInt();
+		
+		int mary[]= new int[n];
+		int pinky[]= new int[n];
+		System.out.println("Enter the mary elements:");
+		for(int i=0;i<n;i++)
+		{
+			mary[i]=sc.nextInt();
+		}
+		System.out.println("Enter the pinky elements:");
+		for(int i=0;i<n;i++)
+		{
+			pinky[i]=sc.nextInt();
+		}
 		
 		int j=pinky.length-1;
 		boolean check=true;
@@ -17,7 +33,6 @@ public class Reverse {
 				check=false;
 			}
 		}
-		
 		if(check)
 		{
 			System.out.println("Yes, it is in reverse order....");

@@ -3,20 +3,6 @@ package org.tnsif.assignmentOne;
 import java.util.Scanner;
 
 public class UserInterface {
-//	Enter Customer Name
-//	Barath
-//	Enter Phone Number
-//	9876543210
-//	Enter address
-//	North Street
-//	Enter Bero Type
-//	Wooden Bero
-//	Enter Bero Colour
-//	Brown
-//	Enter Wood Type
-//	Ply Wood
-//	Amount needs to be paid 12750.00
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String name,address,beroType,beroColor,woodType;
@@ -36,7 +22,7 @@ public class UserInterface {
 		beroType=sc.nextLine();
 		
 		CustomerDetails c=new CustomerDetails(name, phone, address);
-		
+		Bero b;
 		if(beroType.equals("Wood Bero"))
 		{
 			System.out.println("Enter Bero Colour:");
@@ -44,7 +30,7 @@ public class UserInterface {
 			System.out.println("Enter Wood Type:");	
 			woodType=sc.nextLine();
 			
-			Bero b=new WoodenBero(beroType, beroColor, woodType);
+			b=new WoodenBero(beroType, beroColor, woodType);
 			b.calculatePrice();
 			Discount d=new Discount();
 			System.out.println("Amount needs to be paid: "+(b.getPrice()-d.calculateDiscount(b)));
@@ -56,7 +42,7 @@ public class UserInterface {
 			System.out.println("Enter Steel Height:");	
 			beroHeight=sc.nextInt();
 			
-			Bero b=new SteelBero(beroType, beroColor, beroHeight);
+			b=new SteelBero(beroType, beroColor, beroHeight);
 			b.calculatePrice();
 			Discount d=new Discount();
 			System.out.println("Amount needs to be paid: "+(b.getPrice()-d.calculateDiscount(b)));
