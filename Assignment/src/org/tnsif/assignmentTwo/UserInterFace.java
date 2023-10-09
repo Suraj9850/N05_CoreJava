@@ -3,7 +3,6 @@ package org.tnsif.assignmentTwo;
 import java.util.Scanner;
 
 public class UserInterFace {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Products p=new Products();

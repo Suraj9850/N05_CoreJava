@@ -16,7 +16,14 @@ public class Products {
 	}
 	public void sortProductList()
 	{
-		Collections.sort(productList);
-		System.out.println("Sorted Product list:"+productList);
+		if(productList.isEmpty())
+		{
+			System.out.println("No data found");
+		}
+		else
+		{
+			Collections.sort(productList);
+			System.out.println("Sorted Product list:"+productList);
+		}
 	}
 }
