@@ -10,9 +10,9 @@ public class ArrayOperation {
 			System.out.print(value+" ");
 		}
 	}
+	//here we add restriction for sort function only take Numbers.
 	public static<E extends Number> void sortArray(E values[])
 	{
 		Arrays.sort(values);
-		
 	}
 }
