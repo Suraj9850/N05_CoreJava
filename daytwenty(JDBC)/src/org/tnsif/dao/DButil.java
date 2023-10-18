@@ -1,11 +1,7 @@
-package org.tnsif.mvc;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.DriverManager;
-import java.util.Properties;
-
-import com.mysql.jdbc.*;
+package org.tnsif.dao;
+import java.sql.*;
+import java.util.*;
+import java.io.*;
 
 public class DButil {
 	static Connection con;
@@ -17,6 +13,7 @@ public class DButil {
 			prop.load(new FileInputStream("src/DB.properties"));
 			Class.forName(prop.getProperty("driver_name"));
 			con=(Connection) DriverManager.getConnection(prop.getProperty("db_url"),prop.getProperty("username"),prop.getProperty("password"));
+			System.out.println(con);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}	

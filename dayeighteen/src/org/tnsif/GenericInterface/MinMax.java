@@ -1,4 +1,4 @@
-package org.tnsifGenericInterface;
+package org.tnsif.GenericInterface;
 
 public interface MinMax<T extends Comparable <T>>
 {
