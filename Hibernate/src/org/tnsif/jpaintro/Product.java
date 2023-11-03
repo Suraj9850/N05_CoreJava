@@ -9,14 +9,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="product")
+@Table(name = "product")
 public class Product implements Serializable{
     @Id
-//    @GeneratedValue(strategy =GenerationType.AUTO)
 	private int productId;
 	private String productName;
 	private float rate;
 	private int quantity;
+	
 	public int getProductId() {
 		return productId;
 	}

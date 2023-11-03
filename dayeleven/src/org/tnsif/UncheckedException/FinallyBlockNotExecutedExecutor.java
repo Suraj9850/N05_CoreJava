@@ -15,7 +15,7 @@ public class FinallyBlockNotExecutedExecutor {
 //			System.exit(0);
 		}
 //		catch(NumberFormatException  | ArithmeticException e )
-		catch(Exception e)
+		catch(NumberFormatException e)
 		{
 			System.out.println("Exception message:"+e);
 //			System.exit(0);
